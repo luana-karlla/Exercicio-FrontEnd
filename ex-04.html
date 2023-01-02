@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metros</title>
+    <style>
+        body{
+            background-color: rgb(7, 124, 124);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            text-align: center;
+            color: rgb(240, 237, 243);
+        }
+        p{
+            text-align: center;
+            color: black;
+        }
+        section{
+            background-color: white;
+            text-align: center;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 0px 500px;
+            width: 500px;
+            display: block;
+        }
+         
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Conversão de valores</h1>
+    </header>
+    <section>
+       
+            <p>Digite um valor em metros²: <input type="number" name="an1" id="n1"> </p>
+            <input type="button" value="Calcular" onclick="calcular()">
+            <div id="res"><strong>Resposta</strong></div>
+            <script>
+                function calcular(){
+                   let vMetros = window.document.getElementById('n1');
+                   let res = window.document.getElementById('res');
+                   let valor = Number(vMetros.value);
+                   let cm = valor * 100;
+                   let mm = valor * 1000;
+                   res.innerHTML = `<p>O valor de ${valor} convertido em cm: ${cm}cm e mm: ${mm}mm</p>`;
+            
+                }
+        
+        </script>
+       
+    </section>
+</body>
+</html>

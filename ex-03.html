@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerciico 3</title>
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        h1{
+            color: white;
+            border: 20px;
+        }
+        p{
+            color: white;
+        }
+      
+        section{
+           
+            text-align: center;
+            padding: 20px;
+            margin: 20px 90px 0px 90px;
+            border: 20px;
+            border-radius: 20px;
+            width: 500px;
+            background-color: rgb(241, 7, 105);
+        }
+    </style>
+</head>
+<body>
+        <section>
+            <strong><h1>Calcular nota do Aluno</h1></strong>
+            <p>Digite a primeira nota: <input type="number" name="n1" id="nota1"> </p>
+            <p>Digite a segunda nota: <input type="number" name="n2" id="nota2"> </p>
+            <input type="button" value="Resposta" onclick="resposta()">
+            <div id="res"><p>Média</p></div>
+            <div id="apr"><p>Aprovação</p></div>
+        </section>
+
+    <script>
+        function resposta(){
+        let num1 = window.document.getElementById('nota1');
+        let num2 =window.document.getElementById('nota2');
+        let res = window.document.getElementById('res');
+        let n1 = Number(num1.value);
+        let n2 = Number(num2.value);
+        let aMedia = (n1 + n2)/2
+        res.innerHTML = ` <p>A media do aluno é ${aMedia}</p>`;
+
+        if(aMedia >=6){
+            apr.innerHTML = '<p>Aluno aprovado</p>';
+        }else{
+            apr.innerHTML = '<p>Aluno reprovado</p>';
+        }
+        
+        }
+    </script>
+</body>
+</html>
