@@ -9,11 +9,3 @@ function calcular(){
     
     resposta.innerHTML = calcular;
   }
-/*
- for(let c = 1; c <= 10 ; c++){
-        vFinal *= `${nValor} X  ${c} = ${nValor*c}`;
-
-        res.innerHtml = ` teste ${vFinal}`;
-        
-    }
-    */
