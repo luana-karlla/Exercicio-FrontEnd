@@ -1,5 +1,5 @@
 function calcular(){
-    var num = parseInt(document.getElementById("num").value);
+    var num = parseInt(document.getElementById('num').value);
     var resposta = document.getElementById('resposta');
     var calcular='';
   
