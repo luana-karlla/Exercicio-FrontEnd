@@ -5,14 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section>
         <h2>Calculo do m² da parede</h2>
-        <p>Largura da Parede: <input type="number" name="largura" id="l"> </p>
-        <p>Altura da Parede: <input type="number" name="altura" id="a"> </p>
-        <!--<input type="button" value="calcular" onclick="calcular(); calcular2();">-->
-        <button id="button" onclick="calcular();">Calcular</button>
+        <strong>
+            <p>Largura da Parede (m²): <input type="number" name="largura" id="l"> </p>
+        </strong>
+        <strong>
+            <p>Altura da Parede (m²): <input type="number" name="altura" id="a"> </p>
+        </strong>
+        <input type="button" value="resultado" onclick="calcular()">
+        <strong>
+            <div id="res">Resposta</div>
+        </strong>
         
         <!--calcular a area-->
         <!--calcular qtde de tinha necessaria para pintar uma parede-->
