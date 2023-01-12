@@ -1,0 +1,23 @@
+@charset "UTF-8";   
+
+body{
+    background-color: rgb(202, 190, 190);
+}
+section{
+    background-color: darkslategrey;
+    text-align: center;
+    border: 2px solid yellow;
+    border-radius: 12px;
+    margin: 10px 600px ;
+    padding: 12px 12px;
+    width: 400px;
+}
+h1{
+    color: white;
+}
+p{
+    color: white;
+}
+div{
+    color: white;
+}
