@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        table{
+            width: 400px;
+            text-align: center;
+            border-collapse: collapse; /*separa deixando linhas e colunas juntas*/
+        }
+        td{
+            border: 2px solid black;
+        }
+        td.dado{
+            background-color: aqua;
+        }
+        tr.linha{
+            background-color: rgb(14, 162, 207);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="linha">
+            <td>Luana</td>
+            <td>Paula</td>
+            <td>Claudia</td>
+            <td>Julia</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>Tiago</td>
+            <td>Douglas</td>
+            <td>Jose</td>
+        </tr>
+        <tr>
+            <td class="dado">Ford</td>
+            <td>Fusca</td>
+            <td>Fiat</td>
+            <td>Fiorino</td>
+        </tr>
+    </table>
+</body>
+</html>
