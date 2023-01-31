@@ -58,22 +58,33 @@ h2{
     font-family: var(--fonte1);
     font-size: 2.5vw;   
     margin-top: 25px;
-    margin-left: 15px;
+    background-color: red;
+}
+section.imagem > h2{
+    background-color: rgb(196, 27, 27);
+    color: white;
+    margin: 10px;
+    text-align: center;
+    
 }
 section > p{
     font-family: var(--fonte1);
-    font-size: 2.0vw;
-    padding: 15px;
-    margin: 15px;
+    font-size: 2.5vw;
+    padding-bottom: 25px;
+    padding: 30px;
+    
 }
-section.normal{
-    background-color: white;
-    color: black;
+section.normal > h2{
+    color: white;  
+    margin: 2px;
+    text-align: center;
+    background-color: rgb(196, 27, 27);
+  
+    
 }
 section.imagem > p{
     display: inline-block;
     background-color: rgba(21, 21, 22, 0.836);
-    padding: 5px;
     text-shadow: 1px 1px 0px black;
    
 }
@@ -81,6 +92,7 @@ section.imagem{
     color: white;
     background-size: cover;
     background-attachment: fixed;
+    
 }
 section#img01{
     background-image: url("../imagens/walpaper-dbz1.png");
