@@ -1,8 +1,20 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root{
+    --fonte1: 'Lato', sans-serif;
+}
+
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
+}
+html, body{ 
+    min-height: 100vh; /*tamanho minimo do corpo*/
+    background-color: white;
+    font-family: var(--fonte1);
 }
 header{
     color: white;
@@ -18,11 +30,12 @@ nav{
     padding: 15px;
     color: black;
     background-color: #23252bce;
+    
 }
 nav > a{
-    color: white;
+    color: rgb(255, 239, 239);
     padding: 15px;
-    margin: 30px;
+    margin: 12px;
     font-weight: bolder;
     text-decoration: none;
     
@@ -31,6 +44,7 @@ nav > a:hover{
     background-color: #23252b91;
     color: rgb(248, 232, 5);
     text-decoration: underline;
+    
 }
 main{
     background-color: white;
@@ -39,14 +53,46 @@ main{
     margin: auto;
     text-align: justify;
 }
+h2{
+    color: black;
+    font-family: var(--fonte1);
+    font-size: 2.5vw;   
+    margin-top: 25px;
+    margin-left: 15px;
+}
 section > p{
-    font-size: 1em;
+    font-family: var(--fonte1);
+    font-size: 2.0vw;
     padding: 15px;
-    margin: 15px 0px;
+    margin: 15px;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(21, 21, 22, 0.836);
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
    
 }
-section.sombra > p{
-    background-color: rgba(21, 21, 22, 0.404);
-    border-radius: 5px;
-    display: inline-block;
+section.imagem{
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img01{
+    background-image: url("../imagens/walpaper-dbz1.png");
+    background-position: left center;
+}
+section#img02{
+    background-image: url("../imagens/walpaper-dbz2.jpg");
+    background-position: left center;
+}
+footer{
+    background-color: #23252B;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
