@@ -83,7 +83,6 @@ article > h2{
 }
 
 article > p{
-    
     text-align: justify;
     text-indent: 30px;
     font-size: 1.9vw;
@@ -91,9 +90,28 @@ article > p{
     margin: 3px;
 }
 
-iframe{
+div.video{
+    background-color: rgb(2, 28, 75);
+    margin: 0px -20px 30px -20px;
+    padding: 10px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+div.video > iframe{
     position: absolute;
-    left: 25%;
-    width: 50%;
-    height: 50%;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer{
+    background-color: rgb(9, 75, 197);
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 5px;
+    
 }
